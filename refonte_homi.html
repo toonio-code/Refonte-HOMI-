@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Industrie - Homi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-blue: #003b5c;
+            --accent-magenta: #d80056;
+        }
+        .bg-primary { background-color: var(--primary-blue); }
+        .text-primary { color: var(--primary-blue); }
+        .bg-magenta { background-color: var(--accent-magenta); }
+        .text-magenta { color: var(--accent-magenta); }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23003b5c' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                
+                <div class="flex items-center gap-6">
+                    <span class="text-2xl font-bold text-primary flex items-center gap-2">
+                        <svg class="w-8 h-8 text-magenta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        Club Industrie
+                    </span>
+
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 text-gray-600 hover:text-primary font-medium transition py-5">
+                            Naviguer dans le club
+                            <svg class="w-4 h-4 transform group-hover:rotate-180 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        
+                        <div class="absolute left-0 top-full w-64 bg-white rounded-b-xl shadow-xl border-t-2 border-magenta opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
+                            <div class="flex flex-col">
+                                <a href="#vision" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary hover:pl-8 transition-all border-b border-gray-100">🚀 Notre Vision</a>
+                                <a href="#equipe" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary hover:pl-8 transition-all border-b border-gray-100">👥 L'Équipe</a>
+                                <a href="#roadmap" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary hover:pl-8 transition-all border-b border-gray-100">🗺️ Roadmap & Chantiers</a>
+                                <a href="#ressources" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary hover:pl-8 transition-all border-b border-gray-100">📚 Ressources & Expertises</a>
+                                <a href="#actualites" class="px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary hover:pl-8 transition-all">📰 Actualités du Club</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-500 hover:text-primary">🔔</button>
+                    <div class="flex -space-x-2">
+                        <img class="w-8 h-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Avatar 1">
+                        <img class="w-8 h-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Avatar 2">
+                    </div>
+                    <span class="text-sm text-gray-500 cursor-pointer hover:underline">Suivi</span>
+                    <button class="bg-primary hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition shadow-sm">Créer un post</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="vision" class="hero-pattern border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:flex lg:items-center lg:justify-between">
+            <div class="lg:w-2/3 pr-8">
+                <span class="text-magenta font-bold tracking-wider uppercase text-sm mb-2 block">Construire l'industrie du futur</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-6 leading-tight">Bienvenue dans la communauté <br>Club Industrie</h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Créé en <span class="font-bold text-magenta">2019</span>, nous sommes une communauté d'une quinzaine de passionnés ayant pour objectif d'accompagner mc2i sur l'ensemble des thématiques industrielles liées aux enjeux actuels : digitalisation, réindustrialisation ou encore décarbonation.
+                    <br><br>
+                    Puisque l'industrie se cache partout (aéronautique, pharmaceutique, retail, défense, transport, ...), nous sommes un club <span class="font-bold">transverse</span> travaillant autour de 4 thèmes : production, asset management, supervision & sûreté, logistique & supply chain.
+                </p>
+                <button class="bg-magenta hover:bg-pink-700 text-white px-8 py-3 rounded-full font-bold text-lg transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    ✉️ Cliquez ici pour nous contacter !
+                </button>
+            </div>
+            <div class="mt-10 lg:mt-0 lg:w-1/3">
+                <div class="bg-white p-2 rounded-2xl shadow-xl transform rotate-3">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Industrie" class="rounded-xl object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="equipe" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary">Notre Organisation (L'équipe 2025)</h2>
+                <div class="h-1 w-20 bg-magenta mx-auto mt-4 rounded"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition flex flex-col justify-center">
+                    <div>
+                        <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase mb-4 inline-block">Sponsor</span>
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Patrick Astier" class="w-24 h-24 rounded-full mx-auto mb-4 shadow-sm object-cover">
+                        <h3 class="font-bold text-lg text-gray-900">Patrick Astier</h3>
+                        <p class="text-sm text-gray-500">patrick.astier@mc2i.fr</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase mb-4 inline-block">Les Pilotes</span>
+                    <div class="flex justify-center gap-6 mb-4">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80" alt="Matthieu Clemenceau" class="w-16 h-16 rounded-full mx-auto shadow-sm object-cover">
+                            <h3 class="font-bold text-sm mt-2">M. Clemenceau</h3>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Marie Alice Clerc Renaud" class="w-16 h-16 rounded-full mx-auto shadow-sm object-cover">
+                            <h3 class="font-bold text-sm mt-2">M.A. Clerc Renaud</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <span class="bg-magenta text-white text-xs font-bold px-3 py-1 rounded-full uppercase mb-4 inline-block">Les Offer Managers</span>
+                    <div class="flex flex-wrap justify-center gap-4 mb-4">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" alt="Matthieu Perrin" class="w-16 h-16 rounded-full mx-auto shadow-sm object-cover">
+                            <h3 class="font-bold text-sm mt-2">M. Perrin</h3>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Alexandre Martin" class="w-16 h-16 rounded-full mx-auto shadow-sm object-cover">
+                            <h3 class="font-bold text-sm mt-2">A. Martin</h3>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80" alt="Annika Saunier" class="w-16 h-16 rounded-full mx-auto shadow-sm object-cover">
+                            <h3 class="font-bold text-sm mt-2">A. Saunier</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-primary mb-8 border-l-4 border-magenta pl-4">Roadmap 2026 & Chantiers</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm p-4 border border-gray-200">
+                    <div class="flex justify-between items-center mb-4 px-2">
+                        <h3 class="font-bold text-gray-700">Notre Roadmap</h3>
+                        <span class="text-sm text-gray-400">1/1 ↗</span>
+                    </div>
+                    <div class="bg-gray-100 w-full h-64 rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
+                        <span class="text-gray-500 font-medium">[Image Roadmap 2026 à insérer ici]</span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold text-gray-700 mb-2">Les chantiers en cours</h3>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 border-l-4 border-l-blue-600 hover:shadow-md transition cursor-pointer">
+                        <h4 class="font-bold text-primary flex items-center gap-2">🛫 Stream Aéro-Défense</h4>
+                        <p class="text-sm text-gray-400 mt-2 italic">Informations à venir</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 border-l-4 border-l-green-600 hover:shadow-md transition cursor-pointer">
+                        <h4 class="font-bold text-primary flex items-center gap-2">🚗 Stream Automobile</h4>
+                        <p class="text-sm text-gray-400 mt-2 italic">Informations à venir</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 border-l-4 border-l-purple-600 hover:shadow-md transition cursor-pointer">
+                        <h4 class="font-bold text-primary flex items-center gap-2">💻 Stream SI Industriels</h4>
+                        <p class="text-sm text-gray-400 mt-2 italic">Informations à venir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ressources" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-primary mb-8 border-l-4 border-magenta pl-4">Ressources & Culture Industrie</h2>
+            
+            <!-- Integration de l'IA Assistant Industrie -->
+            <div class="mb-8 bg-gradient-to-r from-primary to-blue-900 rounded-2xl p-6 md:p-8 shadow-xl text-white relative overflow-hidden">
+                <!-- Décoration de fond -->
+                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-magenta rounded-full opacity-20 blur-2xl pointer-events-none"></div>
+                
+                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
+                    <div class="md:w-1/3">
+                        <div class="flex items-center gap-3 mb-3">
+                            <svg class="w-8 h-8 text-magenta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <h3 class="font-bold text-2xl">Assistant IA Industrie</h3>
+                        </div>
+                        <p class="text-blue-100 text-sm leading-relaxed">
+                            Posez vos questions sur nos expertises, recherchez des livrables ou explorez des cas d'usage précis. Notre IA interroge toute la base de connaissances du club en temps réel pour vous répondre.
+                        </p>
+                    </div>
+                    
+                    <div class="md:w-2/3 w-full">
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 shadow-inner flex flex-col gap-4">
+                            <div class="flex gap-3 text-sm">
+                                <div class="bg-white text-primary p-3 rounded-2xl rounded-tl-none font-medium shadow-sm w-fit max-w-[85%]">
+                                    Bonjour ! 👋 Je suis l'IA du Club Industrie. Que cherchez-vous à explorer aujourd'hui ?
+                                </div>
+                            </div>
+                            
+                            <div class="relative mt-2">
+                                <input type="text" placeholder="Ex: Quels sont les cas d'usage de la 5G dans l'automobile ?" class="w-full bg-white text-gray-800 text-sm rounded-full pl-5 pr-14 py-4 focus:outline-none focus:ring-2 focus:ring-magenta transition shadow-lg">
+                                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-magenta text-white p-2.5 rounded-full hover:bg-pink-700 transition shadow-md group">
+                                    <svg class="w-5 h-5 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grille classique -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                    <h3 class="font-bold text-lg mb-4 text-gray-800 flex justify-between items-center">
+                        📌 Les liens essentiels
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-between p-3 bg-white rounded-lg shadow-sm hover:border-primary border border-transparent transition cursor-pointer">
+                            <span class="flex items-center gap-3"><span class="text-gray-400">📄</span> Club Industrie - Public</span> <span class="text-gray-400 text-sm">↗</span>
+                        </li>
+                        <li class="flex items-center justify-between p-3 bg-white rounded-lg shadow-sm hover:border-primary border border-transparent transition cursor-pointer">
+                            <span class="flex items-center gap-3"><span class="text-gray-400">📊</span> 1. Présentation du club</span> <span class="text-gray-400 text-sm">↗</span>
+                        </li>
+                        <li class="flex items-center justify-between p-3 bg-white rounded-lg shadow-sm hover:border-primary border border-transparent transition cursor-pointer">
+                            <span class="flex items-center gap-3"><span class="text-gray-400">📝</span> 2. Blog Industrie</span> <span class="text-gray-400 text-sm">↗</span>
+                        </li>
+                        <li class="flex items-center justify-between p-3 bg-white rounded-lg shadow-sm hover:border-primary border border-transparent transition cursor-pointer">
+                            <span class="flex items-center gap-3"><span class="text-gray-400">🎯</span> 3. Nos expertises</span> <span class="text-gray-400 text-sm">↗</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                    <h3 class="font-bold text-lg mb-4 text-gray-800">🛠️ Nos expertises</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:bg-blue-50 transition cursor-pointer border border-gray-100">
+                            <span class="text-2xl block mb-2">🖨️</span>
+                            <span class="font-semibold text-gray-700">3D</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:bg-blue-50 transition cursor-pointer border border-gray-100">
+                            <span class="text-2xl block mb-2">📡</span>
+                            <span class="font-semibold text-gray-700">5G</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:bg-blue-50 transition cursor-pointer border border-gray-100">
+                            <span class="text-2xl block mb-2">🛡️</span>
+                            <span class="font-semibold text-gray-700">Cybersécurité</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:bg-blue-50 transition cursor-pointer border border-gray-100">
+                            <span class="text-2xl block mb-2">📊</span>
+                            <span class="font-semibold text-gray-700">Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="actualites" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-primary mb-8 border-l-4 border-magenta pl-4">L'Actualité du Club</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer h-64">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Security" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <span class="bg-magenta text-white text-xs font-bold px-2 py-1 rounded mb-3 inline-block">Nos newsletters</span>
+                        <h3 class="text-xl font-bold text-white mb-2">Le développement du numérique au sein des industries, leviers et aides</h3>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" class="w-10 h-10 rounded-full object-cover" alt="Antoine">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Antoine Harrer</h4>
+                                <p class="text-xs text-gray-500">30 avril 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-primary">Les news de la semaine du Club Industrie - 30/04</h3>
+                    <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                        📰 L'essentiel de l'actualité Défense, Aérospatial et Automobile ci-dessous 👇
+                    </p>
+                    <button class="text-primary font-semibold text-sm hover:underline">Voir plus...</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white py-8 text-center mt-8">
+        <p class="text-sm opacity-75">© 2026 mc2i - Club Industrie. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
